@@ -1,0 +1,28 @@
+.banner {
+  max-width: 90vw;
+  min-height: 100vh;
+  padding-top: 8rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h1 {
+  text-align: center;
+  color: #22b186;
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+
+.banner p {
+  font-size: 2.4rem;
+  line-height: 1.125;
+  text-align: center;
+  margin: 0.4rem 0 1.6rem;
+}
+
+.banner__img {
+  max-height: 40vh;
+}

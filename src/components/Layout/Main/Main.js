@@ -3,12 +3,14 @@ import { Route, Switch } from "react-router-dom";
 
 import "./Main.css";
 
+import Home from "../../Page/Home/Home";
+
 const Main = ({ navOpen }) => {
   return (
     <main className={`main ${navOpen ? "nav-active" : ""}`}>
       <Switch>
         <Route exact path="/">
-          Home
+          <Home />
         </Route>
         <Route path="/about">About</Route>
         <Route path="/shop">Shop</Route>
