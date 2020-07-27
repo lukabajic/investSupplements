@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
 
 import Logo from "../../Utility/Logo/Logo";
-import MobileToggler from "./Nav/MobileToggler/MobileToggler";
+import MobileToggler from "../Nav/MobileToggler/MobileToggler";
 
-const Header = () => {
-  const [navOpen, setNavOpen] = useState(false);
-
+const Header = ({ toggleNav, toggleCart, navOpen }) => {
   return (
     <header className="header">
       <div className="header__container">
-        <MobileToggler />
-        {navOpen ? <div>Nav</div> : null}
+        <MobileToggler toggleNav={toggleNav} navOpen={navOpen} />
         <Logo />
-        <div>Cart</div>
+        <button className="header__cart-btn" onClick={toggleCart}>
+          <i className="fas fa-shopping-bag"></i>
+          <span className="header__cart-num">1</span>
+        </button>
       </div>
     </header>
   );

@@ -1,8 +1,7 @@
-.main {
-  padding-top: 8rem;
+.footer {
   transition: 0.3s all ease-out;
 }
 
-.main.nav-active {
+.footer.nav-active {
   transform: translateX(calc(100vw - 5.6rem));
 }
