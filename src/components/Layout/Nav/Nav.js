@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+import SMLinks from "../../Utility/SMLinks/SMLinks";
+
 import "./Nav.css";
 
 const Nav = ({ active }) => {
@@ -18,6 +20,7 @@ const Nav = ({ active }) => {
       <NavLink className="nav__link" to="/contact">
         <i className="fas fa-envelope"></i>Contact
       </NavLink>
+      <SMLinks />
     </nav>
   );
 };

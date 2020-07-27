@@ -1,0 +1,18 @@
+.sm-links {
+  list-style: none;
+}
+
+.sm-links > li {
+  display: inline-block;
+}
+
+.sm-links__link {
+  color: inherit;
+  font-size: 3.2rem;
+  margin: 0.8rem;
+}
+
+.sm-links__link:active,
+.sm-links__link:hover {
+  color: rgba(26, 23, 22, 0.75);
+}
