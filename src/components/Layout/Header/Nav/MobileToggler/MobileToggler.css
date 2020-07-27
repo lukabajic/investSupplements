@@ -1,0 +1,54 @@
+.mobile-toggler {
+  width: 2.4rem;
+  z-index: 1050;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 48rem) {
+  .mobile-toggler {
+    display: none;
+  }
+}
+
+.mobile-toggler__icon {
+  position: relative;
+}
+
+.mobile-toggler__icon,
+.mobile-toggler__icon::before,
+.mobile-toggler__icon::after {
+  height: 0.3rem;
+  background-color: #262322;
+  display: inline-block;
+  width: 100%;
+}
+
+.mobile-toggler__icon::before,
+.mobile-toggler__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.mobile-toggler__icon::before {
+  top: -0.75rem;
+}
+
+.mobile-toggler__icon::after {
+  top: 0.75rem;
+}
+
+.mobile-toggler.active .mobile-toggler__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.mobile-toggler.active .mobile-toggler__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.mobile-toggler.active .mobile-toggler__icon {
+  background-color: transparent;
+}
