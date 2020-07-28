@@ -1,0 +1,36 @@
+.presentation {
+  padding: 8rem 1.5rem;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.presentation__list {
+}
+
+.presentation__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.presentation__item:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+
+.presentation__title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 1.6rem 0;
+}
+
+.presentation__text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.25;
+  opacity: 0.875;
+}
+
+.presentation__text:not(:last-child) {
+  margin-bottom: 0.8rem;
+}

@@ -24,3 +24,10 @@ body {
 img {
   max-width: 100%;
 }
+
+.section-title {
+  font-size: 3.2rem;
+  color: #22b186;
+  margin: 0 0 5rem;
+  text-align: center;
+}
