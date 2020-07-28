@@ -10,8 +10,6 @@ body {
   font-size: 1.6rem;
   color: #262322;
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 

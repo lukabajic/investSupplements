@@ -1,0 +1,30 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1.6rem 3.2rem;
+
+  border-radius: 0.4rem;
+  border: 0;
+
+  background-color: #22b186;
+
+  color: #fff;
+  font-size: 1.6rem;
+
+  cursor: pointer;
+
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+}
+
+.button:hover {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
+.button:active {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transform: scale(1);
+}
