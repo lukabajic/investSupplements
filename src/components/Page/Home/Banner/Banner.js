@@ -5,18 +5,25 @@ import Button from "../../../Utility/Button/Button";
 
 import homeBanner from "../../../../assets/home-banner.png";
 
+const content = {
+  header: "Protein",
+  p1: "Plant-based. Delicious flavors.",
+  p2: "Starting at $19.",
+  img: homeBanner,
+  buttonText: "Shop Now",
+};
+
 const Banner = () => {
   return (
     <section className="banner">
-      <h1>Protein</h1>
+      <h1>{content.header}</h1>
       <p>
-        Plant-based. Delicious flavors.
-        <br />
-        Starting at $19.
+        {content.p1}
+        {content.p2 ? <br /> : null}
+        {content.p2 ? content.p2 : null}
       </p>
-      <img src={homeBanner} alt="A bag of protein" className="banner__img" />
-      <Button>Shop Now</Button>
-      {/* <a href="./pages/shop/all.html" className="btn btn-jungle">Shop Now</a> */}
+      <img src={content.img} alt="A bag of protein" className="banner__img" />
+      <Button>{content.buttonText}</Button>
     </section>
   );
 };
