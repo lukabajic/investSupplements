@@ -39,12 +39,12 @@ const content = [
 
 const Presentation = () => {
   const renderedItems = content.map((item) => (
-    <div className="presentation__item" key={item.title}>
+    <figure className="presentation__item" key={item.title}>
       <img src={item.img} alt={item.title} className="presentation__img" />
-      <h4 className="presentation__title">{item.title}</h4>
+      <figcaption className="presentation__title">{item.title}</figcaption>
       <p className="presentation__text">{item.p1}</p>
       {item.p2 ? <p className="presentation__text">{item.p2}</p> : null}
-    </div>
+    </figure>
   ));
 
   return (
