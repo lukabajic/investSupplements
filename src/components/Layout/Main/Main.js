@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import "./Main.css";
 
 import Home from "../../Page/Home/Home";
+import About from "../../Page/About/About";
 
 const Main = ({ navOpen }) => {
   return (
@@ -12,7 +13,9 @@ const Main = ({ navOpen }) => {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/about">About</Route>
+        <Route path="/about">
+          <About />
+        </Route>
         <Route path="/shop">Shop</Route>
         <Route path="/contact">Contact</Route>
       </Switch>

@@ -9,9 +9,9 @@ const Footer = ({ navOpen }) => {
       <SMLinks />
       <hr className="hr--1" />
       <div className="footer__links">
-        <a href="javascript:void(0)">Terms & Conditions</a>&nbsp;|&nbsp;
-        <a href="javascript:void(0)">Privacy</a>&nbsp;|&nbsp;
-        <a href="javascript:void(0)">Policies</a>
+        <a href="/">Terms & Conditions</a>&nbsp;|&nbsp;
+        <a href="/">Privacy</a>&nbsp;|&nbsp;
+        <a href="/">Policies</a>
       </div>
       <span className="footer__copyright">
         &copy;2020, invest (RS). All Rights Reserved.

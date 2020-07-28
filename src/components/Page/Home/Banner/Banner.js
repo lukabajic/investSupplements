@@ -16,7 +16,7 @@ const content = {
 const Banner = () => {
   return (
     <section className="banner">
-      <h1>{content.header}</h1>
+      <h1 className="banner__header">{content.header}</h1>
       <p>
         {content.p1}
         {content.p2 ? <br /> : null}

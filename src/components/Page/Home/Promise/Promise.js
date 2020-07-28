@@ -15,7 +15,7 @@ const content = {
 
 const Promise = () => {
   const renderedItems = content.imgs.map((img, index) => (
-    <figure className="promise__img">
+    <figure className="promise__img" key={index}>
       <img src={img} alt={`Promise ${index + 1}`} />
     </figure>
   ));
