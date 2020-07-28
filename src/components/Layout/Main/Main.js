@@ -5,6 +5,7 @@ import "./Main.css";
 
 import Home from "../../Page/Home/Home";
 import About from "../../Page/About/About";
+import Contact from "../../Page/Contact/Contact";
 
 const Main = ({ navOpen }) => {
   return (
@@ -17,7 +18,9 @@ const Main = ({ navOpen }) => {
           <About />
         </Route>
         <Route path="/shop">Shop</Route>
-        <Route path="/contact">Contact</Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
       </Switch>
     </main>
   );
