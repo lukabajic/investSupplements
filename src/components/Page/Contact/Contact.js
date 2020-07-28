@@ -39,7 +39,10 @@ const form = [
 const Contact = () => {
   const rendererdItems = form.map((item) => (
     <div className="form__group" key={item.name}>
-      <label htmlFor={item.name}>{item.label}</label>
+      <label htmlFor={item.name}>
+        {item.label}
+        {!item.required ? <span className="form__optional">optional</span> : ""}
+      </label>
       {item.type === "textarea" ? (
         <textarea name={item.name} required={item.required} rows="3"></textarea>
       ) : (

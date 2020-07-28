@@ -69,3 +69,11 @@
   display: flex;
   justify-content: center;
 }
+
+.form__optional {
+  opacity: 0.5;
+  text-transform: lowercase;
+  vertical-align: super;
+  font-size: 1rem;
+  margin-left: 0.4rem;
+}
