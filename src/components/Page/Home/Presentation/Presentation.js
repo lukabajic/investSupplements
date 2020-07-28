@@ -39,7 +39,7 @@ const content = [
 
 const Presentation = () => {
   const renderedItems = content.map((item) => (
-    <div class="presentation__item">
+    <div className="presentation__item" key={item.title}>
       <img src={item.img} alt={item.title} className="presentation__img" />
       <h4 className="presentation__title">{item.title}</h4>
       <p className="presentation__text">{item.p1}</p>
