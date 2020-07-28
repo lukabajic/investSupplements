@@ -1,5 +1,7 @@
 .sm-links {
   list-style: none;
+  width: max-content;
+  margin: 0 auto;
 }
 
 .sm-links > li {

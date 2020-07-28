@@ -1,7 +1,31 @@
 .footer {
   transition: 0.3s all ease-out;
+  padding: 5rem 1.5rem;
 }
 
 .footer.nav-active {
   transform: translateX(calc(100vw - 5.6rem));
+}
+
+.footer__links {
+  text-align: center;
+  margin-bottom: 3.2rem;
+  color: rgba(26, 23, 22, 0.5);
+}
+
+.footer__links > a:link,
+.footer__links > a:visited {
+  color: rgb(26, 23, 22);
+}
+
+.footer__links > a:hover,
+.footer__links > a:active {
+  color: rgba(26, 23, 22, 0.75);
+}
+
+.footer__copyright {
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgba(26, 23, 22, 0.75);
 }
