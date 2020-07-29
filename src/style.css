@@ -10,7 +10,6 @@ body {
   font-size: 1.6rem;
   color: #262322;
   font-weight: 400;
-  overflow-x: hidden;
 }
 
 *,
@@ -19,6 +18,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+#root {
+  overflow-x: hidden;
 }
 
 img {
@@ -38,4 +41,9 @@ hr.hr--1 {
   border-top: 1px solid rgba(26, 23, 22, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   margin: 3.2rem 0;
+}
+
+::selection {
+  background-color: #22b186;
+  color: #fff;
 }

@@ -6,6 +6,7 @@ import "./Main.css";
 import Home from "../../Page/Home/Home";
 import About from "../../Page/About/About";
 import Contact from "../../Page/Contact/Contact";
+import Shop from "../../Page/Shop/Shop";
 
 const Main = ({ navOpen }) => {
   return (
@@ -17,7 +18,9 @@ const Main = ({ navOpen }) => {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/shop">Shop</Route>
+        <Route exact path="/shop">
+          <Shop />
+        </Route>
         <Route path="/contact">
           <Contact />
         </Route>

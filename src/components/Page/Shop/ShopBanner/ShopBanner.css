@@ -1,0 +1,40 @@
+.shop-banner {
+  padding: 8rem 0 0;
+}
+
+.shop-banner__container {
+  min-height: 25.6rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.shop-banner__offer {
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin: -4.8rem 1.5rem 1.5rem;
+  opacity: 0.875;
+
+  background-color: #22b186;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  color: #fff;
+  line-height: 1.25;
+}
+
+.shop-banner__link:link,
+.shop-banner__link:visited {
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.shop-banner__link:hover {
+  text-decoration: underline;
+}
+
+.shop-banner__link i {
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}

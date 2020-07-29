@@ -22,7 +22,7 @@ function App() {
   return (
     <React.Fragment>
       <Header toggleNav={toggleNav} toggleCart={toggleCart} navOpen={navOpen} />
-      <Nav active={navOpen} />
+      <Nav active={navOpen} linkClick={toggleNav} />
       <Main navOpen={navOpen} />
       <Footer navOpen={navOpen} />
     </React.Fragment>

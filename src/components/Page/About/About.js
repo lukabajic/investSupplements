@@ -1,6 +1,6 @@
 import React from "react";
 
-import BackgroundImage from "./BackgroundImage/BackgroundImage";
+import AboutBanner from "./AboutBanner/AboutBanner";
 import Mission from "./Mission/Mission";
 import Roots from "./Roots/Roots";
 import Why from "./Why/Why";
@@ -9,7 +9,7 @@ import Subscribe from "../../Utility/Subscribe/Subscribe";
 const About = () => {
   return (
     <React.Fragment>
-      <BackgroundImage />
+      <AboutBanner />
       <Mission />
       <Roots />
       <Why />

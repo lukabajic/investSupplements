@@ -1,5 +1,5 @@
 import React from "react";
-import "./BackgroundImage.css";
+import "./AboutBanner.css";
 
 import img from "../../../../assets/background-image.jpg";
 
