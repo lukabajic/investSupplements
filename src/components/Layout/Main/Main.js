@@ -8,7 +8,7 @@ import About from "../../Page/About/About";
 import Contact from "../../Page/Contact/Contact";
 import Shop from "../../Page/Shop/Shop";
 
-const Main = ({ navOpen }) => {
+const Main = ({ navOpen, addToCart, productsFetch, items }) => {
   return (
     <main className={`main ${navOpen ? "nav-active" : ""}`}>
       <Switch>
@@ -19,7 +19,11 @@ const Main = ({ navOpen }) => {
           <About />
         </Route>
         <Route exact path="/shop">
-          <Shop />
+          <Shop
+            addToCart={addToCart}
+            productsFetch={productsFetch}
+            items={items}
+          />
         </Route>
         <Route path="/contact">
           <Contact />
