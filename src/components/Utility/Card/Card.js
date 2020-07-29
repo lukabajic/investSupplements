@@ -3,15 +3,15 @@ import "./Card.css";
 
 import Button from "../Button/Button";
 
-const Card = ({ image, content, buttonText, clicked }) => {
+const Card = ({ image, header, buttonText, clicked, children }) => {
   return (
     <div className="card" onClick={clicked}>
       <figure className="card__img">
-        <img src={image} alt={content.header} className="card__img-content" />
+        <img src={image} alt={header} className="card__img-content" />
       </figure>
       <div className="card__content">
-        <h3 className="card__header">{content.header}</h3>
-        <p className="card__text">{content.text}</p>
+        <h3 className="card__header">{header}</h3>
+        {children}
       </div>
       <Button>{buttonText}</Button>
     </div>

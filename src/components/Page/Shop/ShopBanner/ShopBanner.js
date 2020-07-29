@@ -13,9 +13,9 @@ const ShopBanner = () => {
       <div style={style} className="shop-banner__container"></div>
       <p className="shop-banner__offer">
         We’re making it easier to get the products you need. Use code 25WELL for
-        25% off sitewide and free delivery on orders $25+. In addition,
-        celebrate Earth Day with us: for the month of April, $1 from every item
-        purchased will be donated to One Tree Planted.{" "}
+        <strong> 25% off</strong> sitewide and free delivery on orders $25+. In
+        addition, celebrate Earth Day with us: for the month of April, $1 from
+        every item purchased will be donated to One Tree Planted.{" "}
         <a
           href="https://www.worldwildlife.org/"
           target="_blank"

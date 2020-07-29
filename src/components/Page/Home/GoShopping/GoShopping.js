@@ -33,14 +33,18 @@ const GoShopping = () => {
     history.replace(url);
   };
 
+  const CardText = (text) => <p className="card__text">{text}</p>;
+
   const renderedItems = content.map((item) => (
     <Card
       key={item.header}
       image={item.img}
       buttonText={item.buttonText}
-      content={{ header: item.header, text: item.text }}
+      header={item.header}
       clicked={() => clickHandler(item.url)}
-    />
+    >
+      {CardText(item.text)}
+    </Card>
   ));
 
   return (

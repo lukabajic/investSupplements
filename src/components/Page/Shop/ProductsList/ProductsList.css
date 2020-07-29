@@ -1,0 +1,15 @@
+.products-list {
+  padding: 8rem 1.5rem;
+}
+
+.card__details-text {
+  margin: 0 0 1em;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.card__details-price {
+  color: #353535;
+  font-weight: 400;
+  font-size: 4rem;
+}
