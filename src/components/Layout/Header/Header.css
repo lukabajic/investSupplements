@@ -34,3 +34,10 @@
   border-radius: 3px;
   color: #fff;
 }
+
+@media only screen and (min-width: 48.1rem) {
+  .header__container {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+}

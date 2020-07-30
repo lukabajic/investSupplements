@@ -66,3 +66,14 @@
   margin-top: 3.2rem;
   padding: 0 1.5rem;
 }
+
+@media only screen and (min-width: 48rem) {
+  .cart {
+    height: calc(100vh - 6rem);
+    width: 48rem;
+    top: 3rem;
+    right: 3rem;
+
+    padding: 3.2rem;
+  }
+}

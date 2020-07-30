@@ -1,6 +1,5 @@
 .promise {
   padding: 8rem 1.5rem;
-  margin: 0 auto;
 }
 
 .promise__text {
@@ -18,4 +17,14 @@
 
 .promise__img {
   width: calc(100% / 3);
+}
+
+@media only screen and (min-width: 48.1rem) {
+  .promise {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  .promise__img {
+    width: 20%;
+  }
 }

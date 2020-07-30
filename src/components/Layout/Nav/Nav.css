@@ -3,6 +3,7 @@
   height: calc(100vh - 8rem - 1px);
   width: calc(100vw - 5.6rem);
   top: calc(8rem + 1px);
+  left: 0;
   z-index: 1040;
 
   display: flex;
@@ -55,4 +56,45 @@
 
 .nav .sm-links {
   margin-top: auto;
+}
+
+@media only screen and (min-width: 30rem) {
+  .nav {
+    width: 29rem;
+  }
+}
+
+@media only screen and (min-width: 48.1rem) {
+  .nav {
+    position: relative;
+    height: max-content;
+    width: max-content;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+
+    background-color: transparent;
+    box-shadow: none;
+
+    transform: translateX(0);
+    transition: none;
+  }
+  .nav__link {
+    padding: 0 1.6rem;
+    display: inline-block;
+    opacity: 1;
+    height: max-content;
+    font-size: 1.8rem;
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.15s ease-out;
+  }
+  .nav__link i,
+  .nav .sm-links {
+    display: none;
+  }
 }

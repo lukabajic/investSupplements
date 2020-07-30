@@ -34,10 +34,10 @@ const ProductsList = ({ items, addToCart }) => {
   }
 
   return (
-    <div className="products-list">
+    <React.Fragment>
       <h2 className="section-title">Products</h2>
-      {renderedItems}
-    </div>
+      <div className="products-list">{renderedItems}</div>
+    </React.Fragment>
   );
 };
 

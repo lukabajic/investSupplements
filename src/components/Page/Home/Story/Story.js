@@ -16,10 +16,10 @@ const Story = () => {
         <div className="story__content">
           <p className="story__text">
             invest began in 2020 with a singular vision: awaken the world to the
-            potential of plant-based nutrition. That drives us to create
-            delicious, premium products that empower you to feel good and
-            perform your best. It’s also what makes us the #1 plant-based
-            protein powder brand.
+            potential of <strong>plant-based nutrition</strong>. That drives us
+            to create delicious, premium products that empower you to{" "}
+            <strong>feel good and perform</strong> your best. It’s also what
+            makes us the #1 plant-based protein powder brand.
           </p>
           <Button clicked={() => history.replace("/about")}>
             Keep Reading

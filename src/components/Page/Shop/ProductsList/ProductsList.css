@@ -1,5 +1,5 @@
 .products-list {
-  padding: 8rem 1.5rem;
+  padding: 0 1.5rem 8rem;
 }
 
 .card__details-text {
@@ -17,4 +17,24 @@
 .products-list__msg {
   text-align: center;
   color: #353535;
+}
+
+@media only screen and (min-width: 48.1rem) {
+  .products-list {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+  .products-list .card:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 48.1rem) {
+  .products-list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+  }
 }

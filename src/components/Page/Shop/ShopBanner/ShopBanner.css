@@ -1,5 +1,5 @@
 .shop-banner {
-  padding: 8rem 0 0;
+  padding: 8rem 0 8rem;
 }
 
 .shop-banner__container {
@@ -12,11 +12,11 @@
 .shop-banner__offer {
   padding: 1.5rem;
   border-radius: 4px;
-  margin: -4.8rem 1.5rem 1.5rem;
+  margin: -4.8rem 1.5rem;
   opacity: 0.875;
 
   background-color: #0071e3;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+  box-shadow: 0px 2px 1px -1px rgba(231, 54, 54, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
   color: #fff;
@@ -37,4 +37,11 @@
 .shop-banner__link i {
   margin-left: 0.4rem;
   vertical-align: middle;
+}
+
+@media only screen and (min-width: 48.1rem) {
+  .shop-banner__offer {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
 }

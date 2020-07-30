@@ -19,3 +19,12 @@
   text-align: center;
   line-height: 1.25;
 }
+
+@media only screen and (min-width: 48.1rem) {
+  .roots__container {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

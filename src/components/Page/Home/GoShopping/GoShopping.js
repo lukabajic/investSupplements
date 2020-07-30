@@ -50,7 +50,7 @@ const GoShopping = () => {
   return (
     <section className="go-shopping">
       <h2 className="section-title">Shop By Category</h2>
-      {renderedItems}
+      <div className="go-shopping__items">{renderedItems}</div>
     </section>
   );
 };

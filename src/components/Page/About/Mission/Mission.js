@@ -4,8 +4,8 @@ import "./Mission.css";
 const Mission = () => {
   return (
     <section className="mission">
-      <h2 className="section-title">Our Mission</h2>
       <article className="mission__text">
+        <h2 className="section-title">Our Mission</h2>
         <p>
           At invest, we have one goal: to help you power your story with premium
           plant-based nutrition that enables you to feel and perform your best.

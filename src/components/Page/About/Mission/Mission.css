@@ -26,3 +26,18 @@
   color: rgba(53, 53, 53, 0.5);
   vertical-align: super;
 }
+
+@media only screen and (min-width: 48.1rem) {
+  .mission {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .mission__quote {
+    padding: 3rem;
+  }
+}

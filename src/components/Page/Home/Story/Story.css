@@ -1,6 +1,5 @@
 .story {
   padding: 8rem 1.5rem;
-  margin: 0 auto;
   background-color: rgba(53, 53, 53, 0.05);
 }
 
@@ -16,4 +15,33 @@
 
 .story__img {
   margin: 0 -1.5rem;
+}
+
+@media only screen and (min-width: 48.1rem) {
+  .story__container {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .story__img {
+    margin: 0;
+  }
+  .story__text {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 82rem) {
+  .story__img {
+    margin: 8rem;
+  }
+  .story__text {
+    padding: 3rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
 }

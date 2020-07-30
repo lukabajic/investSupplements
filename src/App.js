@@ -3,7 +3,6 @@ import { withRouter } from "react-router-dom";
 
 import Header from "./components/Layout/Header/Header";
 import Main from "./components/Layout/Main/Main";
-import Nav from "./components/Layout/Nav/Nav";
 import Footer from "./components/Layout/Footer/Footer";
 import Cart from "./components/Layout/Cart/Cart";
 
@@ -108,6 +107,10 @@ function App() {
     setCartOpen(!cartOpen);
   };
 
+  const closeNav = () => {
+    setNavOpen(false);
+  };
+
   return (
     <React.Fragment>
       <Header
@@ -115,8 +118,8 @@ function App() {
         toggleCart={toggleCart}
         navOpen={navOpen}
         inCart={inCart}
+        closeNav={closeNav}
       />
-      <Nav active={navOpen} linkClick={toggleNav} />
       <Cart
         toggleCart={toggleCart}
         cartOpen={cartOpen}

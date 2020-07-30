@@ -5,7 +5,7 @@
   cursor: pointer;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 48.1rem) {
   .mobile-toggler {
     display: none;
   }

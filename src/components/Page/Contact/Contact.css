@@ -77,3 +77,16 @@
   font-size: 1rem;
   margin-left: 0.4rem;
 }
+
+@media only screen and (min-width: 48.1rem) {
+  .form {
+    max-width: 90vw;
+    margin: -16rem auto 0;
+    padding: 3rem;
+  }
+}
+@media only screen and (min-width: 82rem) {
+  .form {
+    max-width: 40vw;
+  }
+}

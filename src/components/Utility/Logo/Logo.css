@@ -5,6 +5,7 @@
 
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .logo__img {

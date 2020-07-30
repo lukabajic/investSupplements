@@ -1,11 +1,7 @@
 .presentation {
   padding: 8rem 1.5rem;
   /* max-width: 90vw; */
-  margin: 0 auto;
   background-color: rgba(53, 53, 53, 0.05);
-}
-
-.presentation__list {
 }
 
 .presentation__item {
@@ -34,4 +30,19 @@
 
 .presentation__text:not(:last-child) {
   margin-bottom: 0.8rem;
+}
+
+@media only screen and (min-width: 48.1rem) {
+  .presentation__list {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.2rem;
+  }
+}
+@media only screen and (min-width: 82rem) {
+  .presentation__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
