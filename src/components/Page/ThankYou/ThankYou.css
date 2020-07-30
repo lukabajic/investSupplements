@@ -1,0 +1,20 @@
+.thank-you {
+  padding: 8rem 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you__heading {
+  color: #22b186;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+.thank-you__text {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}

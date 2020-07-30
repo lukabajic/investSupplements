@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { withRouter } from "react-router-dom";
 
 import Header from "./components/Layout/Header/Header";
 import Main from "./components/Layout/Main/Main";
@@ -32,6 +33,7 @@ function App() {
           price: item.fields.price,
           servings: item.fields.servings,
           img: `https:${pictureArray[index].fields.file.url}`,
+          type: item.fields.type,
           id: item.sys.id,
           inCart: false,
         };
@@ -135,4 +137,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);

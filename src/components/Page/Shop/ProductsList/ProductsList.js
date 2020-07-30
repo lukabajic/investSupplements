@@ -12,17 +12,26 @@ const ProductsList = ({ items, addToCart }) => {
     </div>
   );
 
-  const renderedItems = items.map((item) => (
-    <Card
-      clicked={() => (!item.inCart ? addToCart(item.id) : null)}
-      header={item.name}
-      image={item.img}
-      buttonText={!item.inCart ? "Add To Cart" : "In Cart"}
-      key={item.id}
-    >
-      {ItemContent(item.flavor, item.price, item.servings)}
-    </Card>
-  ));
+  let renderedItems = null;
+  if (items.length === 0) {
+    renderedItems = (
+      <h3 className="products-list__msg">
+        We do not have any items in this category.
+      </h3>
+    );
+  } else {
+    renderedItems = items.map((item) => (
+      <Card
+        clicked={() => (!item.inCart ? addToCart(item.id) : null)}
+        header={item.name}
+        image={item.img}
+        buttonText={!item.inCart ? "Add To Cart" : "In Cart"}
+        key={item.id}
+      >
+        {ItemContent(item.flavor, item.price, item.servings)}
+      </Card>
+    ));
+  }
 
   return (
     <div className="products-list">

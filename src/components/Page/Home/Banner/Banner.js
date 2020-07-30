@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./Banner.css";
 
 import Button from "../../../Utility/Button/Button";
@@ -14,6 +15,7 @@ const content = {
 };
 
 const Banner = () => {
+  const history = useHistory();
   return (
     <section className="banner">
       <h1 className="banner__header">{content.header}</h1>
@@ -23,7 +25,9 @@ const Banner = () => {
         {content.p2 ? content.p2 : null}
       </p>
       <img src={content.img} alt="A bag of protein" className="banner__img" />
-      <Button>{content.buttonText}</Button>
+      <Button clicked={() => history.replace("/shop")}>
+        {content.buttonText}
+      </Button>
     </section>
   );
 };

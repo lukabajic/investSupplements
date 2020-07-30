@@ -13,3 +13,8 @@
   font-weight: 400;
   font-size: 4rem;
 }
+
+.products-list__msg {
+  text-align: center;
+  color: #353535;
+}
